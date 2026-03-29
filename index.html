@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ömer Yiğit Kuloğlu — Mimar</title>
+  <meta name="description"
+    content="Ömer Yiğit Kuloğlu — Mimar. Kocaeli Üniversitesi, Mimarlık ve Tasarım Fakültesi. Mimari çizim, 3D modelleme ve kentsel denetim alanlarında uzman." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ── NAVBAR ── -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-brand">Mimar CV</div>
+    <div class="nav-links" id="navLinks">
+      <a href="#about" class="nav-link" id="nl-about" data-i18n="nav-about">Hakkımda</a>
+      <a href="#skills" class="nav-link" id="nl-skills" data-i18n="nav-skills">Beceriler</a>
+      <a href="#experience" class="nav-link" id="nl-exp" data-i18n="nav-exp">Deneyim</a>
+      <a href="#education" class="nav-link" id="nl-edu" data-i18n="nav-edu">Eğitim</a>
+      <a href="#contact" class="nav-link nav-cta" id="nl-cta" data-i18n="nav-cta">İletişim</a>
+    </div>
+    <button class="lang-toggle" id="langToggle" aria-label="Dil değiştir">EN</button>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-sticky">
+      <div class="hero-lines" id="heroLines"></div>
+      <div class="hero-scale-text">
+        <span class="hero-bg-word" id="heroBgWord">MİMAR</span>
+      </div>
+
+      <div class="hero-eyebrow" id="heroEyebrow" data-i18n="hero-eyebrow">Mimar · İstanbul · 2026</div>
+      <div class="hero-year" id="heroYear">©&thinsp;ÖYK</div>
+
+      <div class="hero-content" id="heroContent">
+        <h1 class="hero-title">
+          <span class="hero-title-row">
+            <span class="word"><span class="word-inner" id="w1">Ömer</span></span>
+            <span class="word"><span class="word-inner" id="w2">&nbsp;Yiğit</span></span>
+          </span>
+          <span class="hero-title-row hero-title-accent">
+            <span class="word"><span class="word-inner" id="w3">Kuloğlu</span></span>
+          </span>
+        </h1>
+        <div class="hero-divider" id="heroDivider"></div>
+        <div class="hero-meta" id="heroMeta">
+          <span class="hero-meta-item" data-i18n="hero-meta-1">Mimar</span>
+          <span class="hero-meta-sep"></span>
+          <span class="hero-meta-item" data-i18n="hero-meta-2">Kocaeli Üniversitesi</span>
+          <span class="hero-meta-sep"></span>
+          <span class="hero-meta-item" data-i18n="hero-meta-3">İstanbul</span>
+        </div>
+      </div>
+
+      <div class="hero-scroll" id="heroScroll">
+        <span class="hero-scroll-text" data-i18n="hero-scroll">Kaydır</span>
+        <span class="hero-scroll-line"></span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="accent-line" />
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="profile-card sr sr-left" id="profileCard">
+          <div class="profile-top">
+            <div class="profile-avatar">
+              <img src="profile_photo.png" alt="Ömer Yiğit Kuloğlu" id="profileImg"
+                onerror="this.style.display='none'; document.getElementById('pFallback').style.display='flex'" />
+              <div class="profile-avatar-fallback" id="pFallback" style="display:none;">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+              </div>
+            </div>
+            <p class="profile-name">Ömer Yiğit Kuloğlu</p>
+            <p class="profile-role" data-i18n="profile-role">Mimar</p>
+          </div>
+          <div class="profile-bottom">
+            <div class="profile-stat-row">
+              <div class="profile-stat">
+                <span class="profile-stat-n" data-target="4" id="cnt1">0</span>
+                <span class="profile-stat-l" data-i18n-html="stat-1-l">Ay<br>Staj</span>
+              </div>
+              <div class="profile-stat">
+                <span class="profile-stat-n" data-target="5" id="cnt2">0</span>
+                <span class="profile-stat-l" data-i18n-html="stat-2-l">Yazılım<br>Aracı</span>
+              </div>
+              <div class="profile-stat">
+                <span class="profile-stat-n" data-target="4" id="cnt3">0</span>
+                <span class="profile-stat-l" data-i18n-html="stat-3-l">Bilinen<br>Dil</span>
+              </div>
+            </div>
+            <div class="profile-tags">
+              <span class="ptag">AutoCAD</span>
+              <span class="ptag">SketchUp</span>
+              <span class="ptag">Revit</span>
+              <span class="ptag">Lumion</span>
+              <span class="ptag">Photoshop</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text-wrap">
+          <div class="section-label sr sr-d1" data-i18n="about-label">Hakkımda</div>
+          <h2 class="section-title sr sr-d2" data-i18n-html="about-title">
+            Tasarımda hassasiyet.<br><em>Her detayda tutku.</em>
+          </h2>
+          <div class="about-paragraphs">
+            <p class="sr sr-d2" data-i18n-html="about-p1">
+              Kocaeli Üniversitesi Mimarlık ve Tasarım Fakültesi, Mimarlık Bölümü mezunuyum. Mimari çizim, 3D modelleme
+              ve tasarım sunumları için sektörde yaygın kullanılan yazılımları etkin biçimde kullanıyorum.
+            </p>
+            <p class="sr sr-d3" data-i18n-html="about-p2">
+              Eğitim sürecimde belediyelerin denetim, inşaat ve etüt-proje birimlerinde yaptığım stajlar sayesinde hem
+              <strong>uygulama hem de idari süreçlere</strong> hâkimiyet kazandım.
+            </p>
+            <p class="sr sr-d4" data-i18n-html="about-p3">
+              Ayrıca İstanbul'da çeşitli mimari ve tasarım projelerinde <strong>serbest olarak</strong> görev alarak
+              farklı ölçeklerde deneyim edindim; disiplinli ve detay odaklı çalışma anlayışıyla projelere değer katmayı
+              hedefliyorum.
+            </p>
+          </div>
+          <div class="contact-row sr sr-d5">
+            <a href="mailto:y.kuloglu53@gmail.com" class="cchip" id="cc-email">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m2 7 10 7 10-7" />
+              </svg>
+              y.kuloglu53@gmail.com
+            </a>
+            <a href="tel:+905336853295" class="cchip" id="cc-phone" aria-label="Telefon ile ara">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.82 12 19.79 19.79 0 0 1 1.78 3.38 2 2 0 0 1 3.77 1h3a2 2 0 0 1 2 1.72c.128.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l1.06-1.06a2 2 0 0 1 2.11-.45c.907.339 1.85.572 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              +90 533 685 3295
+            </a>
+            <span class="cchip" id="cc-loc" data-i18n="chip-loc">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Esenevler mah. Yunus Emre Cad. No:1/1, Ümraniye / İstanbul
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="accent-line" />
+
+  <!-- ── SKILLS ── -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="skills-intro">
+        <div>
+          <div class="section-label sr" data-i18n="skills-label">Uzmanlık</div>
+          <h2 class="section-title sr sr-d2" data-i18n-html="skills-title">Araçlar &amp; <em>Beceriler</em></h2>
+        </div>
+        <p class="skills-desc sr sr-d2" data-i18n="skills-desc">Akademik titizlik ve belediye ile özel projelerdeki
+          uygulamalı deneyimle oluşturulmuş çok yönlü bir araç seti.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-block sr sr-d1" id="sb1">
+          <div class="skill-block-num">01</div>
+          <div class="skill-block-title" data-i18n="sb1-title">Tasarım Yazılımları</div>
+          <div class="skill-bars">
+            <div class="sbar-row">
+              <div class="sbar-head"><span>AutoCAD</span><span class="sbar-pct">95%</span></div>
+              <div class="sbar-track">
+                <div class="sbar-fill" data-pct="95" id="bar1"></div>
+              </div>
+            </div>
+            <div class="sbar-row">
+              <div class="sbar-head"><span>SketchUp</span><span class="sbar-pct">88%</span></div>
+              <div class="sbar-track">
+                <div class="sbar-fill" data-pct="88" id="bar2"></div>
+              </div>
+            </div>
+            <div class="sbar-row">
+              <div class="sbar-head"><span>Lumion</span><span class="sbar-pct">82%</span></div>
+              <div class="sbar-track">
+                <div class="sbar-fill" data-pct="82" id="bar3"></div>
+              </div>
+            </div>
+            <div class="sbar-row">
+              <div class="sbar-head"><span>Revit</span><span class="sbar-pct">80%</span></div>
+              <div class="sbar-track">
+                <div class="sbar-fill" data-pct="80" id="bar4"></div>
+              </div>
+            </div>
+            <div class="sbar-row">
+              <div class="sbar-head"><span>Photoshop</span><span class="sbar-pct">75%</span></div>
+              <div class="sbar-track">
+                <div class="sbar-fill" data-pct="75" id="bar5"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-block sr sr-d2" id="sb2">
+          <div class="skill-block-num">02</div>
+          <div class="skill-block-title" data-i18n="sb2-title">Temel Yetkinlikler</div>
+          <ul class="skill-tag-list">
+            <li class="stag" id="st1" data-i18n-html="st1">Mimari Çizim &amp; Sunum</li>
+            <li class="stag" id="st2" data-i18n-html="st2">3D Modelleme &amp; Render</li>
+            <li class="stag" id="st3" data-i18n-html="st3">Mimari Tasarım</li>
+            <li class="stag" id="st4" data-i18n-html="st4">Maket Yapımı</li>
+            <li class="stag" id="st5" data-i18n-html="st5">Grafik Tasarım</li>
+            <li class="stag" id="st6" data-i18n-html="st6">Kavramsal Düşünce</li>
+            <li class="stag" id="st7" data-i18n-html="st7">Zaman Yönetimi</li>
+            <li class="stag" id="st8" data-i18n-html="st8">Takım Çalışması</li>
+          </ul>
+        </div>
+
+        <div class="skill-block sr sr-d3" id="sb3">
+          <div class="skill-block-num">03</div>
+          <div class="skill-block-title" data-i18n="sb3-title">Diller</div>
+          <div class="lang-list">
+            <div class="lang-row" id="l1">
+              <div class="lang-info">
+                <span class="lang-name-t">Türkçe</span>
+                <span class="llvl llvl-native" data-i18n="lang-native">Anadil</span>
+              </div>
+              <div class="ldots">
+                <span class="ldot on"></span><span class="ldot on"></span><span class="ldot on"></span><span
+                  class="ldot on"></span><span class="ldot on"></span>
+              </div>
+            </div>
+            <div class="lang-row" id="l2">
+              <div class="lang-info">
+                <span class="lang-name-t">İngilizce</span>
+                <span class="llvl llvl-b1">B1</span>
+              </div>
+              <div class="ldots">
+                <span class="ldot on"></span><span class="ldot on"></span><span class="ldot on"></span><span
+                  class="ldot"></span><span class="ldot"></span>
+              </div>
+            </div>
+            <div class="lang-row" id="l3">
+              <div class="lang-info">
+                <span class="lang-name-t">Almanca</span>
+                <span class="llvl llvl-begin" data-i18n="lang-beginner">Başlangıç</span>
+              </div>
+              <div class="ldots">
+                <span class="ldot on"></span><span class="ldot"></span><span class="ldot"></span><span
+                  class="ldot"></span><span class="ldot"></span>
+              </div>
+            </div>
+            <div class="lang-row" id="l4">
+              <div class="lang-info">
+                <span class="lang-name-t">Arapça</span>
+                <span class="llvl llvl-begin" data-i18n="lang-beginner2">Başlangıç</span>
+              </div>
+              <div class="ldots">
+                <span class="ldot on"></span><span class="ldot"></span><span class="ldot"></span><span
+                  class="ldot"></span><span class="ldot"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="accent-line" />
+
+  <!-- ── EXPERIENCE ── -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="exp-layout">
+
+        <div class="exp-sidebar">
+          <div class="section-label sr" data-i18n="exp-label">Kariyer</div>
+          <h2 class="exp-sidebar-title sr sr-d1" data-i18n-html="exp-sidebar-title">İş<br>Deneyimi</h2>
+          <p class="exp-sidebar-note sr sr-d2" data-i18n="exp-sidebar-note">Ümraniye Belediyesi'nde ofis ve şantiye
+            stajları ile İstanbul genelinde serbest projeler — inşaatın her aşamasında pratik uzmanlık geliştirme.</p>
+        </div>
+
+        <div class="timeline">
+
+          <div class="t-item sr sr-d1" id="exp1">
+            <div class="t-dot"></div>
+            <div class="t-date">2022 &ensp;·&ensp; 2 Ay</div>
+            <div class="t-card">
+              <div class="t-card-top">
+                <div class="t-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                    <path d="M3 9h18M9 21V9" />
+                  </svg>
+                </div>
+                <div>
+                  <h3>Etüt-Proje Müdürlüğü</h3>
+                  <p class="t-company" data-i18n="exp1-company">Ümraniye Belediyesi &ensp;·&ensp; Ofis Stajı</p>
+                </div>
+              </div>
+              <ul class="t-duties">
+                <li data-i18n="exp1-d1">Mimari ve statik projelerde plan çözümleme</li>
+                <li data-i18n="exp1-d2">AutoCAD tabanlı planların mekânsal geometri üzerinden 3D modellenmesi</li>
+                <li data-i18n="exp1-d3">Modellenen projelerin render motorlarıyla sunuma hazırlanması</li>
+                <li data-i18n="exp1-d4">Adobe Photoshop ile afiş ve ilan tasarımı</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="t-item sr sr-d2" id="exp2">
+            <div class="t-dot"></div>
+            <div class="t-date">2023 &ensp;·&ensp; 2 Ay</div>
+            <div class="t-card">
+              <div class="t-card-top">
+                <div class="t-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                    <polyline points="9 22 9 12 15 12 15 22" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 data-i18n="exp2-name">Yapı Kontrol Müdürlüğü</h3>
+                  <p class="t-company" data-i18n="exp2-company">Ümraniye Belediyesi &ensp;·&ensp; Şantiye Stajı</p>
+                </div>
+              </div>
+              <ul class="t-duties">
+                <li data-i18n="exp2-d1">Yapı Denetim Kanunu kapsamında inşaatların kontrolü; gerekli vizelerin verilmesi
+                </li>
+                <li data-i18n="exp2-d2">İnşaatların tüm aşamalarında yalıtım çalışmalarının denetlenmesi</li>
+                <li data-i18n="exp2-d3">Sözlü/yazılı iletişimle gelen talep ve şikâyetlerin yasal süreçler işletilerek
+                  çözüme kavuşturulması</li>
+                <li data-i18n="exp2-d4">Mimari, mekanik ve elektrik uygulamalarının onaylı projelere uygunluğunun
+                  denetlenmesi</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="t-item sr sr-d3" id="exp3">
+            <div class="t-dot current"></div>
+            <div class="t-date">2022 — Günümüz</div>
+            <div class="t-card">
+              <div class="t-card-top">
+                <div class="t-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 20h9" />
+                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 data-i18n="exp3-name">Serbest Mimar</h3>
+                  <p class="t-company" data-i18n="exp3-company">Çeşitli Projeler &ensp;·&ensp; İstanbul</p>
+                </div>
+              </div>
+              <ul class="t-duties">
+                <li data-i18n="exp3-d1">Farklı ölçeklerde çeşitli mimari ve tasarım projeleri</li>
+                <li data-i18n="exp3-d2">3D modelleme, görselleştirme ve sunum hazırlama</li>
+                <li data-i18n="exp3-d3">Müşteri teslimlerinde detay odaklı, kaliteli çıktı anlayışı</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="accent-line" />
+
+  <!-- ── EDUCATION ── -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <div class="section-label sr" data-i18n="edu-label">Akademik</div>
+      <h2 class="section-title sr sr-d1" data-i18n="edu-title">Eğitim</h2>
+      <div class="edu-grid">
+
+        <div class="edu-card sr sr-d2" id="edu1">
+          <div class="edu-card-num">01</div>
+          <div class="edu-year">2021 — 2026</div>
+          <h3 data-i18n="edu1-degree">Lisans Derecesi</h3>
+          <p class="edu-school" data-i18n="edu1-school">Kocaeli Üniversitesi</p>
+          <p class="edu-dept" data-i18n-html="edu1-dept">Mimarlık ve Tasarım Fakültesi<br>Mimarlık Bölümü</p>
+          <span class="edu-pill" data-i18n="edu1-pill">Lisans · 5 Yıl</span>
+        </div>
+
+        <div class="edu-card sr sr-d3" id="edu2">
+          <div class="edu-card-num">02</div>
+          <div class="edu-year">2016 — 2020</div>
+          <h3 data-i18n="edu2-degree">Lise Diploması</h3>
+          <p class="edu-school" data-i18n="edu2-school">Prof. Dr. Nabi Avcı Fen Lisesi</p>
+          <p class="edu-dept" data-i18n-html="edu2-dept">Ortaöğretim<br>Fen Bölümü</p>
+          <span class="edu-pill" data-i18n="edu2-pill">Fen Lisesi · 4 Yıl</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="accent-line" />
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="contact-inner">
+
+        <div class="sr sr-left">
+          <div class="section-label" data-i18n="contact-label">İletişime Geçelim</div>
+          <h2 class="contact-headline" data-i18n-html="contact-headline">Birlikte Çalışmaya<br><em>hazır mısın?</em>
+          </h2>
+          <p class="contact-body" data-i18n="contact-body">İstanbul ve çevresinde tam zamanlı pozisyonlara, serbest
+            projelere ve mimari fırsatlara açığım.</p>
+        </div>
+
+        <div class="contact-cards sr sr-right">
+          <a href="mailto:y.kuloglu53@gmail.com" class="ccard" id="cc1">
+            <div class="ccard-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m2 7 10 7 10-7" />
+              </svg>
+            </div>
+            <div class="ccard-info">
+              <span class="ccard-label" data-i18n="cc-email-label">E-posta</span>
+              <span class="ccard-value">y.kuloglu53@gmail.com</span>
+            </div>
+            <span class="ccard-arr">→</span>
+          </a>
+          <a href="tel:+905336853295" class="ccard" id="cc2" aria-label="Telefon ile ara">
+            <div class="ccard-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.82 12 19.79 19.79 0 0 1 1.78 3.38 2 2 0 0 1 3.77 1h3a2 2 0 0 1 2 1.72c.128.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l1.06-1.06a2 2 0 0 1 2.11-.45c.907.339 1.85.572 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </div>
+            <div class="ccard-info">
+              <span class="ccard-label" data-i18n="cc-phone-label">Telefon</span>
+              <span class="ccard-value">+90 533 685 3295</span>
+            </div>
+            <span class="ccard-arr">→</span>
+          </a>
+          <div class="ccard" id="cc3">
+            <div class="ccard-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div class="ccard-info">
+              <span class="ccard-label" data-i18n="cc-loc-label">Konum</span>
+              <span class="ccard-value" data-i18n="cc-loc-val">Ümraniye / İstanbul, Türkiye</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">Ömer Yiğit Kuloğlu</div>
+        <div class="footer-right">
+          <span class="footer-role" data-i18n="footer-role">Mimar · Kocaeli Üniversitesi · İstanbul</span>
+          <span class="footer-copy" data-i18n="footer-copy">© 2026 Tüm hakları saklıdır.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
